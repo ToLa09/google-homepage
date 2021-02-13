@@ -20,11 +20,11 @@ button {
     border-radius: 4px;
     font-size: 14px;
 }
-button:hover {
-    
+button:hover {    
     border-width: 1px;
     border-color: rgb(118, 118, 118);
     opacity: 0.9;
+    background-color: #f2f2f2;
 }
 .button-row {
     position: relative;
@@ -123,6 +123,9 @@ input:focus {
 #search-lens {
     opacity: 0.4;
     margin-left: 5px;
+}
+#mic-symbol {
+    opacity: 1;
 }
 footer {
     background-color: #f2f2f2;            
