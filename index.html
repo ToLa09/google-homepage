@@ -1,119 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <!--
+<html lang="de">    
     <head>
-        <link rel="stylesheet" href="css/normalize.css">
-    </head>
-    -->
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
-            font-size: 13px;
-        }
-        button {
-            padding: 10px 16px;
-            margin: 0px 12px;
-            border-style: solid;
-            border-width: 1px;
-            border-color: white;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        button:hover {
-            
-            border-width: 1px;
-            border-color: rgb(118, 118, 118);
-            opacity: 0.75;
-        }
-        .button-row {
-            position: relative;
-            display: block;
-            width: 500px;
-            align-items: center;
-            justify-content: center;
-            margin: 25px;
-        } 
-        .button-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .text-style a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            padding: 0px;
-            margin: 0px;
-        }
-        li {
-            display: inline-block;
-            list-style-type: none;
-            padding: 10px;
-        }
-        form {
-            margin: auto;
-            text-align: center;
-        }
-        input {
-            border-width: 0px;
-            width: 500px;
-            padding: 8px 15px;
-        }
-        input:focus {
-            outline: none;
-        }
-        footer {
-            background-color: #f2f2f2;            
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            border-color: #000;
-            border-width: 2px;
-            font-size: 14px;                       
-        }        
-        .text-style a,
-        .text-style button{
-            text-decoration: none;
-            color: #000;
-            opacity: 0.75;
-        }
-        .searchbar {
-            border-style: solid;
-            border-color: #e1e1e1;
-            border-width: 1px;
-            border-radius: 50px;
-            padding: 8px;
-            width: 600px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-        }
-        .searchbar:hover {
-            border-color: white;
-            box-shadow: 0px 0px 5px 2px #e1e1e1;
-        }
-        .searchbar input,
-        .searchbar a {
-            margin: auto;
-        }
-        .logo {
-            margin: auto;
-            text-align: center;
-            padding-top: 115px;
-            padding-bottom: 20px;
-        }                                
-    </style>
-    
+        <link rel="stylesheet" href="css/main.css">
+    </head>    
     <body>
-        <nav>
-            <ul class="text-style">
-                <li><a href="https://about.google/?fg=1&utm_source=google-DE&utm_medium=referral&utm_campaign=hp-header">About</a></li>
-                <li><a href="https://store.google.com/DE?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=de-DE">Store</a></li>
-                <li class="nav-right" style="float: right;"><a href="https://www.google.de/imghp?hl=de&ogbl">Images</a></li>
-                <li class="nav-right" style="float: right;"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
-            </ul>            
-        </nav>
+        <header class="text-style">
+            <div id="header-left">
+                <a href="https://about.google/?fg=1&utm_source=google-DE&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a href="https://store.google.com/DE?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=de-DE">Store</a>
+            </div>
+            <div id="header-right">
+                <div id="header-right-links">
+                    <a href="https://www.google.de/imghp?hl=de&ogbl">Gmail</a>
+                    <a href="https://mail.google.com/mail/&ogbl">Images</a>
+                </div>
+                <div id="apps-link">
+                    <a href=""><img id="apps-logo" src="images/google_apps.png" alt="Google Apps"></a>
+                </div>
+                <button id="sign-in-button">Sign in</button>                  
+            </div>                                                    
+        </header>
 
         <div class="logo">
             <img src="images/googlelogo_color_272x92dp.png" alt="Google Logo">
@@ -121,25 +27,26 @@
 
         <form class="text-style">
             <div class="searchbar">
+                <img id="search-lens" src="images/google_search.png">
                 <input class="search-obj">
                 <a href="" class="search-obj"><img src="images/googlemic_color_24dp.png" alt="Microphone Symbol" height="25px"></a>
             </div>            
             <div class="button-container">
                 <div class="button-row">
                     <button>Google Search</button>
-                    <button>I'm feeling lucky</button>
+                    <button>I'm Feeling lucky</button>
                 </div>
             </div>
         </form>
 
         <footer>
             <ul class="text-style footer">
-                <li style="padding-left: 30px;"><a href="">Advertising</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">How Search works</a></li>
+                <li style="padding-left: 30px;"><a href="https://www.google.com/intl/de_de/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
                 <li style="float: right;"><a href="">Settings</a></li>
-                <li style="float: right;"><a href="">Terms</a></li>
-                <li style="float: right;"><a href="">Privacy</a></li>
+                <li style="float: right;"><a href="https://policies.google.com/terms?hl=de&fg=1">Terms</a></li>
+                <li style="float: right;"><a href="https://policies.google.com/privacy?hl=de&fg=1">Privacy</a></li>
             </ul>                     
         </footer>        
     </body>
